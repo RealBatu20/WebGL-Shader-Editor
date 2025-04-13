@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced WebGL Shader Editor</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Load Monaco Editor via CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.35.0/min/vs/loader.min.js"></script>
+</head>
+<body>
+  <div id="container">
+    <div id="editor-container"></div>
+    <div id="preview-container">
+      <canvas id="gl-canvas"></canvas>
+      <div id="camera-controls">
+        <button id="front-camera">Front Camera</button>
+        <button id="back-camera">Back Camera</button>
+        <button id="stop-camera">Stop Camera</button>
+      </div>
+      <div id="error-display"></div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
